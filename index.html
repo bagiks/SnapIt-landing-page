@@ -12,6 +12,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="" type="image/x-icon" , sizes="16x16">
     <link rel="stylesheet" href="style.css" type="text/css">
+    
+    
+    <link href="vendor/jquery.bxslider-min.css" rel="stylesheet" />
+    <!-- jQuery library -->
+    <script src="vendor/jquery-3.1.1.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="vendor/jquery.bxslider-min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.bxslider').bxSlider({
+                mode: 'horizontal',
+                moveSlides: 1,
+                slideMargin: 5,
+                infiniteLoop: true,
+//                slideWidth: 660,
+//                minSlides: 1,
+//                maxSlides: 2,
+                speed: 200,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+    
 </head>
 
 <body>
@@ -49,7 +72,7 @@
         </section>
         
         <section id="steps">
-            <ul>
+            <ul class="bxslider">
                 <li>
                     <div class="step">
                         <div class="step-detail">
@@ -73,7 +96,7 @@
                             <img src="img/step-pic.png" alt="">
                         </div>
                     </div>
-</li>
+                </li>
 
                 <li>
                 <div class="step">
